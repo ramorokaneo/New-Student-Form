@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h2>New Student Registration Form</h2>
+    <form action="submit_registration.php" method="POST">
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required placeholder="Surname"><br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Name"><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="address">Address:</label><br><br>
+        <input type="text" id="house_number" name="house_number" required placeholder="House Number"><br>
+
+        <input type="text" id="street_name" name="street_name" required placeholder="Street Name"><br>
+
+        <input type="text" id="suburb" name="suburb" required placeholder="Suburb"><br>
+
+        <input type="text" id="city" name="city" required placeholder="City"><br>
+
+        <input type="text" id="state" name="state" required placeholder="State"><br>
+
+        <input type="text" id="country" name="country" required placeholder="Country"><br><br>
+        
+        <input type="text" id="postal_code" name="postal_code" required placeholder="Postal Code"><br><br>
+
+        <label for="telephone">Telephone:</label>
+        <input type="tel" id="telephone" name="telephone" required><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="course" required><br><br>
+
+        <button type="submit">Register</button>
+        <button type="button" onclick="cancelRegistration()">Cancel</button>
+    </form>
+
+    <script>
+        function cancelRegistration() {
+            // Redirect or perform any other desired action when cancel button is clicked
+            alert("Registration canceled!");
+        }
+    </script>
+</body>
+</html>
